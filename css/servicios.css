@@ -1,0 +1,14 @@
+.overlay { 
+    color:#fff;
+    position:absolute;
+    z-index:12;
+    top:20%;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+
+.texto-banner-servicio{
+    padding: 30px;
+    text-align: left;
+}

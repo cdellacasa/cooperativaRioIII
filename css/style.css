@@ -1,0 +1,716 @@
+body{
+    /*font-family: 'Roboto';*/
+    background: #f9f9f9;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    height: 100px;
+}
+
+.navbar-collapse.in {
+     overflow-y: visible; 
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+    background-color: #f8f8f8;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    margin-top: 20px;
+}
+
+#servicios{
+    min-height: 100vh;
+    background-image: url('../images/backServicios.jpg');
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#servicios .servicio{
+    background-color: white;
+    padding-bottom: 20px;
+    transition: 400ms;
+    
+}
+
+.servicio:hover{
+    -webkit-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+}
+
+.servicio-descripcion{
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    min-height: 270px;
+}
+
+.servicio-descripcion h3{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.contenido-banner{
+    position: absolute;
+}
+
+.seccion-icono{    
+    margin-top: -40px;
+    margin-left: 37%;
+    position: absolute;
+}
+
+.seccion-icono img{
+    width: 70px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    border: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: none;
+    
+    background-color:#77C500;
+    color:white !important;
+    border:0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+}
+
+.btn-primary{
+    color:white;    
+    background-color:#21b754;
+    border:0px;
+    border-radius: 0px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover{
+    background-color:#77C500;
+    -webkit-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+}
+
+.btn-secondary{
+    color:white;    
+    background-color:#2188b7;
+    border:0px;
+    border-radius: 0px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover{
+    background-color:#21b2b7;
+    -webkit-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+    box-shadow: 1px 3px 7px 0px rgba(0,0,0,0.43);
+}
+
+
+
+.btn-default{
+    color:#21b754;
+    font-weight: bold;
+    background-color:white;
+    border:0px;
+    border-radius: 0px;
+}
+
+.btn-facturas{
+    color:white !important;
+    margin-left: 20px;
+}
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 0%; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color:rgb(255, 255, 255); 
+ 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    z-index: 9;
+}
+
+/* The navigation menu links */
+.sidenav a {
+ 
+    text-decoration: none;
+    font-size: 15px;
+    color: #ebe5e5;
+
+    transition: 0.3s
+}
+
+.sidenav a img{
+    width:40px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+ 
+   
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #1c8640;
+}
+
+.dropdown-menu{
+    background-color: #1c8640;
+    padding: 30px;
+}
+
+.dropdown-menu>li>a{
+    color:white;
+}
+
+.dropdown-menu img{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#panel-notificacion{
+    width: 100%;
+    background-color:#1c8640;
+    margin-top: 100px;
+    color:white;
+    padding: 30px 30px 30px 30px;
+    transition: 0.3s;
+}
+
+.panel-descripcion-servicio{
+    width: 100%;
+    margin-top: 100px;
+    color:rgb(66, 66, 66);
+    padding: 30px 30px 30px 30px;
+    transition: 0.3s;
+}
+
+footer{
+    padding-bottom: 50px;
+    /*background-color: #1c8640;*/
+    background-image: url('../images/backFooter.jpg');
+}
+
+
+
+#texto_ubicacion{
+    color:white;
+}
+
+#texto_contacto{
+    color:white;
+}
+
+#texto_email{
+    color:white;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.galeria-institucional{
+    z-index: 0 !important;
+}
+
+
+.imagen-institucional{
+    width: 250px;
+    height: 200px;
+}
+
+.institucional-texto{
+    padding: 20px;
+    color:rgb(97, 97, 97);
+    margin-top: -6px;
+}
+
+
+#noticias{
+    padding: 50px 0px 50px 0px;
+}
+
+#noticias h3{
+    margin-left: 40px;
+}
+
+.noticia{
+    margin-top:-50px;
+}
+.link-servicio{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #33b76e;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    
+    transition: 0.2s;
+  
+}
+
+.link-servicio:hover{
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.42);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.42);
+}
+
+.link-servicio img{
+    margin-top: 30px;
+}
+
+
+.noticia{
+    padding: 30px;
+}
+
+#noticias h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.fecha-noticia{
+    background-color: #1c864029;
+    padding: 5px;
+}
+
+
+.titulo-noticia {
+    height: 50px;
+    padding: 10px;
+}
+
+.icon-footer{
+    height: 30px;
+    width: 30px;
+}
+
+
+.modal-content {
+    max-width: 800px;
+}
+
+.navbar-brand{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 30px;
+}
+
+.servicios  h3{
+    
+    opacity: 0.7;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.footer-contacto  h3{
+    color:white;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer-contacto  h5{
+    color:white;
+    opacity: 0.7;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer-contacto  p{
+    color: white;
+    opacity: 0.7;
+}
+
+
+
+.footer-contacto a{
+    color: white;
+}
+
+#servicios-section{
+    background-image: url('../images/backServicios.jpg');
+    background-size: cover;
+    /*height: 100vh;*/
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicios-section .link-servicio{
+    display: inline-block;
+    background-color: rgb(33, 183, 84);
+    color:white;
+    height: 150px;
+    width: 150px;
+    border-radius: 1px;
+
+    margin-top: 45px;
+    margin-left: 45px;
+
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.link-servicio-text{
+    background-color:white;
+    color:green;
+    height: 50px;
+    width: 150px;
+    border-radius: 1px;
+
+    margin-left: 45px;
+
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+#servicios-section .link-servicio img{
+    margin-top:30px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+
+#servicios-section a{
+    color: white;
+    style: none;
+}
+.decoracion-footer{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(33, 183, 84);
+}
+
+.marca-registrada{
+    width: 100%;
+    background-color: darkslategray;
+    color:#abbbbb;
+    padding: 5px;
+}
+
+
+/*================================*/
+
+
+
+.open > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);  
+    
+  }
+  .open > .dropdown-menu li a {
+    color: white;  
+  }
+  .dropdown-menu li a{
+    color: #fff;
+  }
+
+  .dropdown-menu li a:hover{
+    background-color: #33b76e;
+  }
+
+  .dropdown-menu {
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;  
+    animation-fill-mode: forwards; 
+    -webkit-transform: scale(1, 0);
+    display: block;
+    
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+  }
+  .dropup .dropdown-menu {
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;  
+  }
+  
+  .navbar .nav > li > .dropdown-menu:after {
+  
+  }
+
+  .dropup > .dropdown-menu:after {
+    border-bottom: 0;
+    border-top: 6px solid rgba(39, 45, 51, 0.9);
+    top: auto;
+    display: inline-block;
+    bottom: -6px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+
+
+  .form-consulta{
+      margin-top:15px; 
+  }
+
+  .descripcion-servicio{
+      margin-bottom:15px;
+  }
+
+  .r3lab-container-logo{
+      display: inline-block;
+      margin-left:30px;
+  }
+
+  .r3lab-container-texto{
+      display: inline-block;
+      margin-left: 30px;
+      margin-top:20px;
+  }
+
+  .owl-carousel .item{
+      margin-top: 0px;
+  }
+  .item{
+    text-align: center;
+    margin-top: 100px;
+    overflow: hidden;
+    
+  }
+
+  @media only screen and (min-width: 600px) {
+    .item img{
+        width: 100%;
+      }
+
+    
+       
+}
+
+.r3lab-container-logo img{
+    margin-top:-30px;
+}
+
+.r3lab-container-texto .centro{
+    color:white;
+    text-decoration: none
+}
+
+.r3lab-container-texto a{
+    color: white;
+}
+  
+.menu-tramites{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/backtramite.jpg);
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.container-titulo-tramites{
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    padding: 20px 0px 0px 0px;
+}
+
+.container-menu-tramites{    
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 50px 0px 50px;
+}
+
+.tramite{
+    opacity: 0.9;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    margin:auto;
+    margin-top:50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.tramite img{
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.tramite-descripcion{
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.tramite-descripcion h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+
+
+.pantalla-instructivo{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/backtramite.jpg);
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.container-menu-tramites .card{
+    margin-top:100px;
+    background-color: white;
+    width: 100%;
+}
+
+.instructivo{
+    position: relative;
+    opacity: 0.9;
+    width: 100%;
+    margin:auto;
+    padding: 10px;
+    margin-top:50px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 250ms linear;
+}
+
+.instructivo p{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.instructivo-descripcion{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.instructivo .footer{
+    height: 50px;
+    padding: 10px;
+}
+
+.instructivo  img{
+    margin:auto;
+    border-radius: 10px;
+    max-height: 300px;
+}
+
+.instructivo .btn{
+    width: 100%;
+    max-width: 300px;
+    line-height: 30px;
+    margin-top:10px;
+}
+
+.instagram_profile{
+    display: none;
+}
+
+.instagram_gallery > a  > img{
+    min-width: 150px !important;
+    min-height: 150px !important;
+}
+
+.background-estudiando{
+    
+    min-height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/272662-P5IYON-542.jpg');
+}
+
+.icon-aprender-casa{
+    width: 300px;
+    display: inline-block;
+}
+
+.titulo-aprender-casa{
+    margin-top:40px;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    display: inline-block;
+}
+
+.subtitulo-aprender-casa{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+
+.btn-aprender-casa{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    min-width: 200px;
+    color: white;
+    margin-top: 30px;    
+    margin-right: 10px;
+}
+
+.btn-aprender-casa:hover{
+    border: 2px solid green;
+    border-radius: 50px;
+    min-width: 200px;
+    color: white;
+    background-color: green;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.items-aprender-casa{
+    color: white;
+    margin-top: 20px;
+}

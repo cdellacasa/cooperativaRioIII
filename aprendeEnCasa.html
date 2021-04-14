@@ -1,0 +1,710 @@
+﻿<!DOCTYPE html>
+<html>
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <title>RioTel</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./css/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/preguntas.css">
+    <script src="https://kit.fontawesome.com/54067619a9.js" crossorigin="anonymous"></script>
+  </head>
+ 
+  <body>
+    <a href="https://wa.me/5493571411111">      
+        <button type="button" class="btn btn-primary pull-left" style="width:70px; height:70px; position: fixed; bottom: 30px; right: 30px; z-index:999;font-size: 30px; border-radius: 100px;" > 
+            <i class="fab fa-whatsapp"></i>
+        </button> 
+    </a> 
+        <div id="main">
+        
+        <nav class="navbar navbar-default navbar-fixed-top">          
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-md  hidden-sm" href="#">
+                    <img alt="Brand"  src="./images/logo-header.png">
+                </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                  
+                <ul class="nav navbar-nav navbar-right cl-effect-3">            
+                               
+                    <li><a class="page-scroll" href="index.html">HOME</button></a></li> 
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">INSTITUCIONAL
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="page-scroll" href="#institucional">QUIENES SOMOS?</button></a></li> 
+                            <li><a class="page-scroll" href="#noticias">NOTICIAS</button></a></li>
+                            
+                        </ul>
+                    </li>          
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICIOS
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicioEnergia.html"><img src="./images/icono-servicio-energia.png">Energía</a></li>
+                            <li><a href="servicioAgua.html"><img src="./images/icono-servicio-agua.png">Agua</a></li>
+                            <li><a href="servicioCanalLocal.html"><img src="./images/icono-servicio-canalLocal.png">Canal Local</a></li>
+                            <li><a href="servicioCloacas.html"><img src="./images/icono-servicio-cloacas.png">Cloacas</a></li>
+                            <li><a href="servicioInternet.html"><img src="./images/icono-servicio-internet.png">Internet</a></li>
+                            <li><a href="servicioTV.html"><img src="./images/icono-servicio-tv.png">TV HD</a></li>
+                            <li><a href="servicioTelefoniaFija.html"><img src="./images/icono-servicio-telfija.png">Telefonía Fija</a></li> 
+                            <li><a href="servicioObrasPublicas.html"><img src="./images/icono-servicio-obraspublicas.png">Obras Públicas</a></li>
+                            <li><a href="servicioHormigon.html"><img src="./images/icono-servicio-hormigon.png">Hormigón</a></li>
+                            <li><a href="servicioCementerioParque.html"><img src="./images/icono-servicio-cementerio.png">Cementerio Parque</a></li>
+                            <li><a href="servicioSociales.html"><img src="./images/icono-servicio-serviciossociales.png">Servicios Sociales</a></li>
+                            <li><a href="servicioEducacion.html"><img src="./images/icono-servicio-educacion.png">Educación</a></li>                            
+                            <li><a href="servicioCapacitacion.html"><img src="./images/icono-servicio-capacitacion.png">Capacitación</a></li>
+                        </ul>
+                    </li>                   
+                    <li><a href="" data-toggle="modal" data-target="#myModal"> CONSULTAS </button></a></li>                    
+                    <!--li><a> SERVICIOS </button></a></li-->                                  
+                    <li><a href="https://autogestion.riotel.com.ar/Autogestion/servlet/com.publiserweb.login" class="btn btn-primary btn-facturas">MIS FACTURAS</a></li>
+                    <li><a href="http://webmail.riotel.com.ar" class="btn btn-primary btn-facturas">WEB MAIL</a></li>
+                    <li><a href="http://200.49.120.32:8080/TramitesWebGx16/servlet/com.tramiteswebgx16.homeguiaweb2" class="btn btn-primary btn-facturas">GUIA TELEFONICA</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>    
+        </nav>
+
+
+        <div id="loginMisFacturas" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                               
+                </div>
+                <div class="modal-body">                  
+                    <iframe width="100%" height="500px" src="https://autogestion.riotel.com.ar/Autogestion/servlet/com.publiserweb.login" frameborder="0"></iframe>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="background-estudiando">
+            <div class="container" >
+                <div class="row" style="margin-top:20%">
+                    <div class="col-md-3">
+                        <img class="icon-aprender-casa" src="./images/aprender.png" alt="">       
+                    </div>
+                    <div class="col-md-9" style="margin-top:5%; margin: bottom 20px;;">
+                        <h3 id="aprende-en-casa">APRENDER EN CASA</h3>
+                        <h4 id="aprende-en-casa-text">La nueva herramienta que permite a familias y docentes<br> contar con un apoyo pedagógico en el hogar</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container" id="queYComoAprenderEnCasa">           
+                        <div class="col-md-6">  
+                                <h4 class="titulo-banner">¿Qué es Aprender en casa?</h4>              
+                            <div class="col-md-12">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/7JG9FSTDAHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">   
+                                <h4 class="titulo-banner">¿Como se usa Aprender en casa?</h4>             
+                            <div class="col-md-12">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/iHiBJ1YXTsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+        <div class="preguntas-contenedor-aprende" style="
+        margin-top: 40px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+        margin-left: 30px;" id="preguntas-aprende">
+            <div>
+                <div class="container" id="preguntas-frecuentes">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+            </div>
+            <br>
+        <div class="pregunta-respuesta">
+            <div class=".preguntas-titulo">
+                <div class="container">
+                    <div class="row">
+                        ¿En qué consiste el sitio?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        <a href="www.rioterceroaprende.com.ar">www.rioterceroaprende.com.ar </a><strong>aprende en casa</strong> es una iniciativa para ayudar a que todos los estudiantes puedan aprender desde nuestra <strong>plataforma online</strong>, en donde podrán: ver videos, leer resúmenes y resolver ejercicios y guías de estudio, de todas las materias de primaria y secundaria.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo reiniciar la contraseña?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Si no recordás tu contraseña podés pedir el cambio ingresando al link que dice “¿Olvidaste la contraseña?” y que aparece debajo del botón INGRESA en la sección de inicio.
+                        En ambos casos se te pedirá que ingreses tu mail nuevamente y luego vas a recibir un mail con un enlace que funciona por única vez para ingresar la contraseña que desees.
+                        Si no lo ves en tu bandeja de entrada, puede estar correo no deseado, promociones, o en la papelera.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Qué contraseña puedo usar para reemplazar la que me asignaron?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Podés usar cualquier contraseña que quieras y te sea fácil de recordar. <strong>Te damos unos tips para crearla:</strong> por seguridad siempre es mejor que tenga 8 o más caracteres, combinando letras y números. No utilices vocales con tilde, letra ñ, o signos de puntuación. Si estás en un teclado de computadora, asegúrate de no tener activado el bloqueo de mayúsculas o el bloqueo numérico. Si estás en un teléfono celular o tablet, tené en cuenta que sus teclados pueden poner en mayúscula la primera letra automáticamente. También podés hacer click sobre el icono de ojo para verla mientras la escribís.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Se puede usar un mismo mail para usar más de una cuenta?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        No, cada mail corresponde a una sola cuenta para usar dentro del sitio.
+                    </div> 
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        No tenemos computadora, solo celular y tablet.
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        A la plataforma se puede acceder desde cualquier dispositivo que pueda conectarse a internet, ya sea mediante Wifi o datos móviles. Se puede entrar desde una tablets, celulares, notebooks, no es necesario tener computadora.
+                    </div> 
+                </div>
+            </div>   
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Tienen una aplicación para usar en el celular?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        No, pero el sitio está diseñado para que pueda visualizarse correctamente en cualquier dispositivo. Si querés entrar desde el celular o la tablet, tenés que abrir la aplicación del navegador y en la barra de búsqueda escribir <a href="www.rioterceroaprende.com.ar">www.rioterceroaprende.com.ar</a> y ya podés ingresar. En celulares desde Chrome tenés en el menú la opción "agregar a pantalla principal", que te crea un acceso directo, así escribís la dirección una solo vez
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo descargar guías y resúmenes? ¿se pueden imprimir?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Para imprimir los resúmenes, primero tenés que guardarlos en tu computadora, para esto tenés que hacer "click derecho ---> guardar como" en cada una de las hojas que quieras imprimir, lo mismo en caso de que quieras imprimir guías, se guardarán en forma de imagen .png
+                    </div> 
+                </div>
+            </div>   
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo buscar contenidos?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Para buscar contenidos podés hacerlo de dos formas: 
+                        <ul>
+                            <li>En la pestaña de MATERIAS debés elegir el <strong>nivel escolar</strong> (primaria, pos primaria o secundaria), allí verás una <strong>lista de materias</strong> (en primaria, las cuatro primeras están en castellano). Luego podrás recorrer <strong>los temas</strong> que están ordenados de manera pedagógica. Chequeá los iconos al lado de cada contenido que distinguen entre videos, resúmenes, guías de estudio y ejercicios.
+                            </li>
+                            <li>
+                            También podés escribir una palabra en el BUSCADOR (<strong>la lupita</strong>), por ejemplo "Música" o "multiplicación". Así se te listarán todos los contenidos relacionados al tema.
+                            </li>
+                            <li>
+                            Además de las materias curriculares, en Primaria hay contenidos de Los Creadores con capítulos y experimentos de ciencia y Recreo que es un módulo con juegos de Emoji Challenge para que aprendan jugando a adivinar películas, países y libros. En Recreo también publicamos el video estreno de la semana.
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo hago para ver los contenidos en otros idiomas?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Para ver los videos en inglés y portugués tenés que ingresar a PRIMARIA BY AULA365, y ahí vas a encontrarte con las 4 materias escritas en el idioma que va a estar el contenido.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿A qué se refiere pos primaria?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Estos contenidos son para estudiantes de entre 13 y 18 años. Funcionan como complemento un poco más avanzado para los temas de primaria, o para prepararse para el ingreso a secundaria.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿En qué horario puedo ingresar a la plataforma? ¿Puedo ver los videos y realizar las prácticas más de una vez?                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        La plataforma está disponible las 24 hs y todos los días, podés ingresar todas las veces que quieras. Todos los videos se pueden reproducir la cantidad de veces que lo necesites, al igual que los ejercicios que podés realizarlos más de una vez. Hay que tener en cuenta que cuando se completa una práctica de ejercicios ésta queda registrada en el perfil, y si se comienza a responder nuevamente, ese registro se reinicia.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        El video no se reproduce
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Recomendamos pausar unos minutos el video antes de darle play, para que pueda cargarse. Sino prueba ingresar nuevamente.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        El video no tiene sonido
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        En este caso tenés que chequear el volumen del dispositivo donde se reproduce el video y también que tengas activado el sonido del video, para eso tenés que corroborar que el icono de altavoz no esté tachado y que la barrita de sonido esté al volumen que necesitás
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Por qué no puedo saber qué nota saqué en los ejercicios?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Los ejercicios no funcionan como evaluación; están pensados para que puedas poner en práctica lo visto en el video, y luego de cada pregunta se indica cuál era la correcta. El ejercicio figura como completo al responder todas las preguntas y los podés realizar las veces que quieras.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Por qué no puedo completar la guía dentro del sitio?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Las guías de estudio no están diseñadas para ser completadas dentro del sitio, ya que tienen consignas a desarrollar por los estudiantes que luego deben ser corregidas por sus docentes. Para completar las consignas, recomendamos que los estudiantes envíen sus respuestas a los docentes de la forma que suelen trabajar, sea email, grupo de Facebook, grupo de WhatsApp, etc.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo me puedo convertir en tutor o profesor y crear aulas de trabajo? ¿Cómo sumar estudiantes?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Para crear grupos tanto vos como tus estudiantes deben registrarse en la plataforma. Podés crear tantos grupos como necesites y es una función que te permitirá organizar a tus estudiantes según el curso o colegio que asistan. Tené en cuenta que no vas a poder agregar estudiantes buscándolos por el mail si no son usuarios de la plataforma. 
+                        Así es el procedimiento:
+                        <br>
+                        <ol>
+                            <li>Ingresá a tu panel y observá los íconos en el margen izquierdo (podés expandir el menú haciendo click en la flecha). Hacé click en ESTUDIANTES.</li>
+                            <li>Hacer click sobre el mensaje que te invita a convertirte en tutor.</li>
+                            <li>Ahora agregá los emails de tus estudiantes en el campo de escritura y presioná el botón (+). Luego de esto, tus estudiantes deberán ingresar a sus paneles y autorizar tu invitación.
+                            <u>Si la rechazan, no podrás agregarlos nuevamente.</u>
+                            Suena complicado, pero probablemente tengas que hacer esto una sola vez.</li>
+                            <li>Para agregar a un alumno a un grupo, hacé click sobre el ícono ACCIONES
+                            Luego desplegá el menú e ingresá al grupo elegido para ver si se agregó correctamente.
+                            <u>Importante: La categoría “todos mis estudiantes” es un listado, no un grupo. Si eliminás a un alumno de ahí, desaparecerá también de todos los grupos en los que esté.</u></li>
+                        </ol>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        No puedo agregar a un estudiante
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Si al agregar a un alumno el sitio te dice que el mail es incorrecto o inexistente, es porque tu alumno aún no es usuario en la plataforma, o se registró con otro mail. Tenés que comunicarte con él para indicarle cómo se tiene que registrar y luego sí enviarle tu invitación y que la acepte. <u>Es importante explicarle que en caso de que rechace la solicitud de que seas su tutor, no vas a poder volverlo a agregar.</u>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo puedo ver el progreso de los estudiantes en el panel de seguimiento si ya soy tutor o profesor?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Desplegando el menú que aparece en tu nombre, vas a PANEL y luego ingresás a ESTUDIANTES. Vas a ver dos iconos al lado de cada alumno que indican la cantidad de ejercicios y videos que vio. Al hacer click sobre el estudiante, podés ver en detalle el tema de la actividad y el porcentaje de completado.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo puede un padre ver el progreso de su hijo en el panel personalizado de seguimiento?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Esto se puede hacer de dos maneras:
+                        1-El padre suscribe a una cuenta propia y agrega al hijo como si fuera su tutor, como se indica en punto de creación de tutor o profesor, y así podrá ver toda su actividad.
+                        2-O el padre ingresa al sitio con la misma cuenta que el hijo y ve su propio panel. Para esto tenés que ingresar al PANEL, lo vas a encontrar pasando el mouse donde figura el nombre (arriba a la derecha de la pantalla), una vez en el panel podrás ver todas las actividades que el usuario ha realizado en el sitio y su porcentaje de completado. Para que aparezca al 100% es necesario haber visto todos los videos y realizado todos los ejercicios dentro del mismo tema. La visualización de guías o resúmenes no es contabilizada en el panel.                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo se pueden compartir los contenidos en Google Classroom/ WA entre otras plataformas de comunicación con sus estudiantes?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Para compartir el contenido lo podés hacer copiando la URL del video, resumen, guía o ejercicio y enviando el link por WhatsApp, Google Classroom, por mail o cualquier otro sistema de soporte de comunicación que utilices. Los videos no se pueden descargar y para visualizarlos es necesario que seas usuario en el sitio. El link te llevará directo al contenido que seleccionaste.
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="pregunta-respuesta">
+            <div class="pregunta">
+                <div class="container">
+                    <div class="row">
+                        ¿Cómo puedo contratar el servicio?
+                    </div>
+                </div>
+            </div>
+            <div class="respuesta">
+                <div class="container">
+                    <div class="row">
+                        Para recibir más información o adquirir el servicio podés contactarte a nuestra línea fija <a href="tel:+3571-411111">(411111)</a> llamada o vía WhatsApp
+                         <a href="https://api.whatsapp.com/send?phone=[+54][3571-411111]"">(3571-411111)</a>.
+                        Sino, podés completar el formulario en nuestra página web y nos contactaremos a la brevedad.                    
+                    </div> 
+                </div>
+            </div>
+        </div>  
+    </div>    
+
+        <footer>
+                <div class="decoracion-footer"></div>
+				<div class="footer-contacto">
+					<div class="container">	
+						
+							<div class="col-xs-12 col-md-6 hidden-xs hidden-sm">
+                                <div class="footer-ubicacion">
+                                    <h3>Ubicación</h3>
+                                    
+                                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DHAPDOvAOq4Kt2yzrex-yZrfm7kqMhAd" width="500" height="350"></iframe>
+                                    <hr>    
+                                    <div class="row">
+                                            <div class="col-md-1">										
+                                                <img class="icon-footer" src="./images/icono_location.png">										
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p>Administración: Dean Funes 15 - Río Tercero - Cordoba</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">										
+                                                <img class="icon-footer" src="./images/icono_location.png">										
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p>Canal Local: Belgrano y Colón - Río Tercero - Cordoba</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">										
+                                                <img class="icon-footer" src="./images/icono_location.png">										
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p>Banco de Sangre: Colón 185 - Río Tercero - Cordoba</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">										
+                                                <img class="icon-footer" src="./images/icono_location.png">										
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p>Edificio Operativo: Inca Athaualpa s/n - Río Tercero - Cordoba</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">										
+                                                <img class="icon-footer" src="./images/icono_location.png">										
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p>Reclamos Energía y Agua: Caseros y Alte. Brown - Río Tercero - Cordoba</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-1">										
+                                                <img class="icon-footer" src="./images/icono_location.png">										
+                                            </div>
+                                            <div class="col-md-11">
+                                                <p>Centro de Capacitación: Belgrano y Colón - Río Tercero - Cordoba</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+							<div class="col-xs-12 col-md-3 hidden-xs hidden-sm">
+                                
+								<h3>Institucional</h3>
+								
+								<a href="">Historia</a><br>
+								<a href="">Otro </a><br>	
+								
+								<h3>Servicios</h3>		
+								
+								<a href="servicioEnergia.html">Energía Electrica </a><br>
+                                <a href="servicioAgua.html">Aguas </a><br>
+                                <a href="servicioCanalLocal.html">Canal Local </a><br>
+								<a href="servicioCloacas.html">Cloacas </a><br>
+								<a href="servicioObrasPublicas.html">Obras Públicas </a><br>
+								<a href="servicioHormigon.html">Hormigon Elaborado </a><br>
+								<a href="servicioSociales.html">Servicios Sociales </a><br>
+								<a href="servicioCapacitacion.html">Centro de Capacitación </a><br>
+                                <a href="servicioEducacion.html">Educación Cooperativa </a><br>
+                                <a href="servicioCementerioParque.html">Cementerio Parque</a><br>
+								<a href="servicioTelefoniaFija.html">Telefonía Fija </a><br>		
+								<a href="servicioTV.html">Televisión </a><br>
+								<a href="servicioInternet.html">Internet </a><br>
+
+								<h3>Consultas</h3>	
+
+								<a href="">Autogestión </a><br>
+								<a href="http://webmail.riotel.com.ar">Webmail </a><br>
+								<a href="http://200.49.120.32:8080/TramitesWebGx16/servlet/com.tramiteswebgx16.homeguiaweb2">Guía Telefónica </a><br>
+								
+
+
+							</div>
+							<div class="col-xs-12 col-md-3">								
+								<div class="row">					
+									
+                                    <h3>Teléfonos</h3>
+                                    <div id="texto_contacto">
+                                        <h5>Administración </h5><div class="info_contacto">03571-411111</div>
+                                        <h5>Canal Local </h5><div class="info_contacto">03571-645400</div>
+                                        <h5>Reclamos Telefonía, Internet, Televisión</h5><div class="info_contacto">03571-411111</div>
+                                        <h5>Reclamos Energía y Agua</h5><div class="info_contacto">0800-245-1111 / 411115</div>
+                                        <h5>Ed. Operativo</h5><div class="info_contacto">03571-411119</div>
+                                        <h5>Banco de Sangre</h5><div class="info_contacto">03571-411113</div>
+                                        <h5>Centro de Capacitación</h5><div class="info_contacto">03571-411117</div>
+                                        <h5>Otras Consultas al:</h5>
+                                        <div class="info_grande_contacto">0800-245-0110</div>                                        
+                                    </div>
+									
+								</div>
+								<div class="row">
+                                    <h3>Mail</h3>
+									<div id="texto_email">cooperativa@riotel.net.ar</div>									
+								</div>
+							</div>
+						
+					</div>
+				</div>
+            </div>
+          
+	    </footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	   	<script type="text/javascript" src="./js/menu.js"></script>
+        <script src="./js/owlCarousel/owl.carousel.min.js"></script>
+
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+        <script src="./js/jquery.instagramFeed.min.js"></script>
+
+        <script type="text/javascript">
+           
+
+            
+            (function($){
+                    $(window).on('load', function(){
+                        $.instagramFeed({
+                            'username': 'cosprt',
+                            'container': "#instagram-feed-demo",
+                            'display_profile': true,
+                            'display_biography': true,
+                            'display_gallery': true,
+                            'get_raw_json': false,
+                            'callback': null,
+                            'styling': true,
+                            'items': 4,
+                            'items_per_row': 4,
+                            'margin': 1 
+                        });
+                    });
+                })(jQuery);
+
+        </script>
+       
+    </body>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Realiza tu consulta</h4>
+                <p>Intentaremos responderte a la brevedad</p>
+            </div>
+            <div class="modal-body">
+                <form id="contact" action="send.php" method="post">    
+                    <div class="form-group">
+                        <input  name="nombre" class="form-control" placeholder="Tu nombre" type="text" tabindex="1" required >                
+                    </div>
+                    <div class="form-group">              
+                        <input name="email" class="form-control" placeholder="Tu email" type="email" tabindex="2" required>               
+                    </div>                    
+                    <div class="form-group">             
+                        <textarea name="mensaje" rows="10" class="form-control" placeholder="Consulta" tabindex="5" required></textarea>                
+                    </div>
+                    <div class="form-group">
+                        <button name="submit" class="btn btn-info btn-lg" type="submit" id="contact-submit" data-submit="...Enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                
+            </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
